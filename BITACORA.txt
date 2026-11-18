@@ -1,0 +1,22 @@
+
+=================================================
+Diagrama de Nodos y Flechas
+=================================================
+cabeza
+  │
+  ▼
+[ Vacunación | 02/02 ] ──► [ Control Peso | 15/03 ] ──► [ Limpieza Dental | 20/05 ] ──► null
+
+=================================================
+Inicio de la Simulation: Enlace Perdido 
+=================================================
+
+Qué ocurre: El recorrido solo muestra el primer nodo y se detiene; el costo total solo sumará los $85.000 
+de la vacunación.
+
+        const cabeza = nodo1;       |  const cabeza = nodo1;       |    fecha: '02/02',
+        nodo1.next = null;          |  motivo: 'vacunacion',
+        nodo2.next = nodo3;         |  veterinario: 'Dra. Rios',
+        nodo3.next = null;          |  costo: 85000
+
+=================================================
